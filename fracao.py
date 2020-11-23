@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+
 def fracao(x,erro=1e-4,plotar=False,printar=False):
     '''Retorna o numerador e o demonimador respectivamente.'''
     num_iter=0
@@ -20,4 +21,5 @@ def fracao(x,erro=1e-4,plotar=False,printar=False):
         plt.plot(iteracao,lista_erro,color='black',linewidth=1)
         plt.xlabel('Iteração')
         plt.ylabel('Erro absoluto')
+        plt.show()
     return numerador,denominador
